@@ -17,7 +17,6 @@ export default observer(function ActivityDetails() {
     const {id} = useParams<{id: string}>();
 
     useEffect(() => {
-        console.log(id);
         if(id){
             loadActivity(id);
         }
